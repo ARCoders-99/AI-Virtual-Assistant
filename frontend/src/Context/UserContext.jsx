@@ -8,8 +8,7 @@ export const UserDataContext = createContext();
 function UserContext({ children }) {
   // ✅ Use environment variable for backend URL
   // Default to localhost for development
-  const serverUrl =
-    import.meta.env.VITE_API_URL || "http://localhost:8000";
+  const serverUrl ="https://ai-virtual-assistant-9wbw.onrender.com";
 
 
   const [userData, setUserData] = useState(null);
